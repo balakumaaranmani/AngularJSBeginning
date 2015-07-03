@@ -1,0 +1,21 @@
+<div>
+    <div>
+        <label> Select City: </label>
+        <select ng-change="changeCity()" ng-model="city">
+            <option ng-repeat="x in cityList" value={ {x}}> {{x}} </option>
+        </select>
+    </div>
+    <hr>
+    <br>
+	<!-- uncomment if u need to see acutal json -->
+    <!-- <div> {{currentCityWeather}} </div> -->
+    <br>
+    <table class="table table-striped">
+        <tr>
+            <th ng-repeat="(key,value) in currentCityWeather.main"> {{key}} </th>
+        </tr>
+        <tr>
+            <td ng-repeat="(key,value) in currentCityWeather.main"> {{value}} </td>
+        </tr>
+    </table>
+</div>
