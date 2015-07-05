@@ -1,0 +1,15 @@
+<html ng-app="WeatherApp">
+<head>
+<title>Weather App</title>
+<script src = "http://code.jquery.com/jquery-1.11.3.min.js"> </script >
+<script src = "http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.16/angular.js"> </script>
+<link rel="stylesheet" href ="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"> </link>
+<script src = "./js/WeatherController.js"> </script >
+</head>
+<body ng-controller="WeatherController">
+<h1 ng-bind="title"></h1>
+<hr>
+<div weather-widget />
+
+</body>
+</html>
